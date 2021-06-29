@@ -8,9 +8,10 @@ import Sitemap from "parts/Sitemap";
 import Footer from "parts/Footer";
 
 import useScrollAnchor from "helpers/hooks/useScrollAnchor";
-
+import useModalDOM from 'helpers/hooks/useModalDOM'
 export default function HomePage() {
   useScrollAnchor();
+  useModalDOM();
   return (
     <>
       <Header theme="white" position="absolute" />
